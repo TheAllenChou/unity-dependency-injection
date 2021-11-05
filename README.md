@@ -1,4 +1,5 @@
 ## A Simple Dependency Injection Utility for Unity
+### (Oops. Looks like it's more like a service locator than a dependency injector. Will clean up the terms at some point...)
 by **Ming-Lun "Allen" Chou** / [AllenChou.net](http://AllenChou.net) / [@TheAllenChou](http://twitter.com/TheAllenChou) / [Patreon](https://www.patreon.com/TheAllenChou)
 
 [Installation Guide](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
