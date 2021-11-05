@@ -56,7 +56,7 @@ public class MyComponent : MonoBehaviour
 }
 ```
 
-You can also inherit your component from `AutoInjectedMonoBehaviour` and override the `Start` method. Don't forget to call the base version of `Start`.
+You can also inherit your component from `AutoInjectedMonoBehaviour`, whose `Start` method internally calls `Injector.Inject` so you don't have to.
 
 ```
 using UnityEngine;
@@ -71,7 +71,25 @@ public class MyComponent : AutoInjectedMonoBehaviour
   [Inject("Other")] private GameObject Other;
   [Inject("Other")] private Transform TheirTransform;
   [Inject("Other")] private MeshRenderer TheirRenderer;
+}
+```
 
+If you need to override the `Start` method, however, you'd need to remember to call `base.Start`.
+
+```
+using UnityEngine;
+
+using LongBunnyLabs.DependencyInjection;
+
+public class MyComponent : AutoInjectedMonoBehaviour
+{
+  [Inject] private GameObject Self;
+  [Inject] private Transform MyTransform;
+  [Inject] private MeshRenderer MyRenderer;
+  [Inject("Other")] private GameObject Other;
+  [Inject("Other")] private Transform TheirTransform;
+  [Inject("Other")] private MeshRenderer TheirRenderer;
+  
   protected override void Start()
   {
     base.Start();
