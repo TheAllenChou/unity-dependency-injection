@@ -1,4 +1,4 @@
-## Dependency Injection Utility for Unity
+## A Simple Dependency Injection Utility for Unity
 by **Ming-Lun "Allen" Chou** / [AllenChou.net](http://AllenChou.net) / [@TheAllenChou](http://twitter.com/TheAllenChou) / [Patreon](https://www.patreon.com/TheAllenChou)
 
 [Installation Guide](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
