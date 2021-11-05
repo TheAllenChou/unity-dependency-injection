@@ -3,7 +3,7 @@ by **Ming-Lun "Allen" Chou** / [AllenChou.net](http://AllenChou.net) / [@TheAlle
 
 [Installation Guide](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
 
-# Usage
+## Usage
 
 Add the `Inject` attribute to fields of type `GameObject` or `Component`. An additional game object name can be provided to the `Inject` attribute to specify which game object to inject from. If no game object name is provided, the game object of the component will be used.
 
