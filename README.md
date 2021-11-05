@@ -9,7 +9,7 @@ Add the `Inject` attribute to fields of type `GameObject` or `Component`. An add
 
 Call `Injector.Inject` to inject into fields tagged with the `Inject` attribute.
 
-```
+```cs
 using UnityEngine;
 
 using LongBunnyLabs.DependencyInjection;
@@ -32,7 +32,7 @@ public class MyComponent : MonoBehaviour
 
 This is equivalent to:
 
-```
+```cs
 using UnityEngine;
 
 public class MyComponent : MonoBehaviour
@@ -58,7 +58,7 @@ public class MyComponent : MonoBehaviour
 
 You can also inherit your component from `AutoInjectedMonoBehaviour`, whose `Start` method calls `Injector.Inject` so you don't have to.
 
-```
+```cs
 using UnityEngine;
 
 using LongBunnyLabs.DependencyInjection;
@@ -76,7 +76,7 @@ public class MyComponent : AutoInjectedMonoBehaviour
 
 If you need to override the `Start` method, however, you'd need to remember to call `base.Start`.
 
-```
+```cs
 using UnityEngine;
 
 using LongBunnyLabs.DependencyInjection;
