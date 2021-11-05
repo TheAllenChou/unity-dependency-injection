@@ -2,7 +2,7 @@
 
 namespace LongBunnyLabs.DependencyInjection
 {
-  public class InjectedMonoBehaviour : MonoBehaviour
+  public class AutoInjectedMonoBehaviour : MonoBehaviour
   {
     virtual protected void Start()
     {
