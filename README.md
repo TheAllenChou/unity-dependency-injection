@@ -56,7 +56,7 @@ public class MyComponent : MonoBehaviour
 }
 ```
 
-You can also inherit your component from `AutoInjectedMonoBehaviour`, whose `Start` method internally calls `Injector.Inject` so you don't have to.
+You can also inherit your component from `AutoInjectedMonoBehaviour`, whose `Start` method calls `Injector.Inject` so you don't have to.
 
 ```
 using UnityEngine;
@@ -93,6 +93,8 @@ public class MyComponent : AutoInjectedMonoBehaviour
   protected override void Start()
   {
     base.Start();
+    
+    // your code here
   }
 }
 ```
