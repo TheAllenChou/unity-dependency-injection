@@ -98,3 +98,5 @@ public class MyComponent : AutoInjectedMonoBehaviour
   }
 }
 ```
+
+`Injector.Inject` doesn't have to be called within a `Start` method. You can call it whereever you see fit.
