@@ -5,9 +5,9 @@
   "description": "Dependency injection utility for Unity.",
   "unity": "2019.4",
   "author": {
-    "name": "Ming-Lun \"Allen\" Chou",
+    "name": "Long Bunny Labs",
     "email": "minglun.chou@gmail.com",
-    "url": "https://allenchou.net"
+    "url": "https://TheAllenChou.github.com"
   },
   "keywords": [
     "Dependency Injection"
