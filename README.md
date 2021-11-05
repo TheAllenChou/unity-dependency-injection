@@ -49,7 +49,7 @@ public class MyComponent : MonoBehaviour
     MyGameObject    = gameObject;
     MyTransform     = gameObject.GetComopnent<Transform>();
     MyRenderer      = gameObject.GetComponent<MeshRenderer>();
-    OtherGameObject = GameObject.Find("Other").GetComponent<MeshRenderer>();
+    OtherGameObject = GameObject.Find("Other");
     OtherTransform  = GameObject.Find("Other").GetComponent<Transfrom>();
     OtherRenderer   = GameObject.Find("Other").GetComponent<MeshRenderer>();
   }
